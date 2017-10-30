@@ -1,1 +1,34 @@
-/* JC Medina's Capstone Project - November 7, 2017 */ 
+/* JC Medina's Capstone Project - November 7, 2017 */
+/* Universal */
+.body { /* Consider setting rem elements here */
+  padding-left: 24px;
+  padding-right: 24px;
+}
+/* Header */
+header {
+  height: 64px;
+  background-color: white;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 0px 0px 24px;
+}
+.logo {
+  height: 32px;
+  display: flex;
+  align-items: center;
+}
+.logotype {
+  font-family: 'Lato', sans-serif;
+  text-transform: uppercase;
+  color: gray;
+}
+.logotype-bold {
+  font-weight: 700;
+  color: black;
+}
+.nav {
+  font-family: 'Lato', sans-serif;
+  margin: 0 24px;
+}
+/* Hero */
