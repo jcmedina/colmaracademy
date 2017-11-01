@@ -1,10 +1,6 @@
 /*
   JC Medina's Capstone Project - Deadline: November 7, 2017
-  things to improve
-
-  1. Global Properties
-  2. Links should have a hover state
-  3. Look into webkit, modernizr options
+  - Look into webkit, modernizr options
 */
 /* Global Styles */
 body {
@@ -48,6 +44,20 @@ a {
 }
 a:hover {
   color: #4a4a4a;
+}
+.text-detail {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 16px;
+}
+.list-item {
+  display: flex;
+  border: 1px solid #f2f2f2;
+}
+.list-item:hover {
+  background-color: #d8d8d8;
 }
 /* Header */
 header {
@@ -133,13 +143,6 @@ button:hover {
   flex-direction: column;
   width: 40%;
 }
-.list-item {
-  display: flex;
-  border: 1px solid #f2f2f2;
-}
-.list-item:hover {
-  background-color: #d8d8d8;
-}
 .list-item-link {
   font-size: 1.2rem;
   color: #4a90e2;
@@ -152,13 +155,6 @@ button:hover {
 .thumbnail {
   max-width: 100%;
   height: auto;
-}
-.text-detail {
-  width: 65%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 16px;
 }
 /* Start Learning */
 .learning {
