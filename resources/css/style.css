@@ -60,7 +60,7 @@ a:hover {
   background-color: #d8d8d8;
 }
 /* Header */
-header {
+.header {
   height: 64px;
   background-color: white;
   display:flex;
@@ -88,6 +88,14 @@ header {
 }
 .nav span {
   margin: 0 16px;
+}
+.mobile-header {
+  height: 64px;
+  background-color: white;
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0px 0px 0px 24px;
 }
 /* Hero */
 .jumbotron {
@@ -123,7 +131,7 @@ button a {
 button:hover {
   background-color: #232728;
 }
-/* Information Section */
+/* Updates */
 .updates {
   display: flex;
 }
@@ -220,4 +228,88 @@ footer {
 .footer-links {
   font-size: 1.2rem;
   padding-left: 8px;
+}
+/* Mobile Media Queries */
+@media only screen and (min-width: 320px) and (max-width:480px) {
+/* Mobile Header */
+  .header {
+    display: none;
+  }
+/* Mobile Jumbotron */
+  .jumbotron {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+  .left-panel {
+    width: 100%;
+  }
+  .right-panel {
+    width: 90%;
+    padding: 32px 16px;
+  }
+  button {
+    width: 90%;
+  }
+/* Mobile Updates */
+  .featured-update {
+    display: none;
+  }
+  .update-list {
+    width: 100%;
+    padding: 16px;
+  }
+  .list-item {
+    display: flex;
+    flex-direction: column;
+  }
+  .photo-detail {
+    display: none;
+  }
+  .photo-detail-mobile {
+    width: 100%;
+    height: auto;
+  }
+  .text-detail {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    padding-bottom: 32px;
+  }
+  .text-detail h2 {
+    font-size: 1.5rem;
+  }
+/* Mobile Start Learning */
+  .learning {
+    padding: 32px 16px;
+    background-color: #ffffff;
+    border: 1px solid #f2f2f2;
+  }
+  .courses {
+    display:none;
+  }
+  .courses-mobile {
+    padding: 0px 16px;
+  }
+  .course-mobile {
+    width: 100%;
+    background-color: #dbdbdb;
+    padding: 16px 16px 24px 16px;
+    margin-bottom: 8px;
+  }
+  .course-mobile h2 {
+    font-size: 1.5rem;
+  }
+}
+/* Desktop Media Queries */
+@media only screen and (min-width:480px) {
+  .mobile-header {
+    display: none;
+  }
+  .photo-detail-mobile {
+    display: none;
+  }
+  .courses-mobile {
+    display: none;
+  }
 }
