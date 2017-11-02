@@ -286,13 +286,20 @@ footer {
     display:none;
   }
   .courses-mobile {
+    width: 80%;
     padding: 0px 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .course-mobile {
     width: 100%;
     background-color: #dbdbdb;
     padding: 16px 16px 24px 16px;
     margin-bottom: 8px;
+  }
+  .course-mobile:hover {
+    background-color: #d8d8d8;
   }
   .course-mobile h2 {
     font-size: 1.5rem;
