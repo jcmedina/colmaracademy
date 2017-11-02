@@ -7,9 +7,6 @@ body {
   font-size: 18px;
   font-family: 'Lato', sans-serif;
 }
-.container {
-  padding: 0px 24px;
-}
 h1 {
   font-size: 2.5rem;
   font-weight: 900;
@@ -281,7 +278,7 @@ footer {
   }
 /* Mobile Start Learning */
   .learning {
-    padding: 32px 16px;
+    padding: 32px 0px;
     background-color: #ffffff;
     border: 1px solid #f2f2f2;
   }
@@ -300,7 +297,35 @@ footer {
   .course-mobile h2 {
     font-size: 1.5rem;
   }
+/* Mobile Thesis Exhibits */
+  .thesis {
+    width: 100%;
+    padding: 0px;
+  }
+  .video-panel {
+    width: 100%;
+    padding: 0px 0px 24px 0px;
+  }
+  .video-text-detail {
+    display: none;
+  }
+  .exhibit-list {
+    display:none;
+  }
 }
+/* Mobile Footer */
+  footer {
+    margin-bottom: 16px;
+    border-top: 1px;
+    border-style: solid;
+    border-color: #f2f2f2;
+  }
+  footer span {
+    font-size: 1rem;
+  }
+  .misc-links {
+    display: none;
+  }
 /* Desktop Media Queries */
 @media only screen and (min-width:480px) {
   .mobile-header {
